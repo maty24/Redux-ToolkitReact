@@ -4,11 +4,13 @@ import { Provider } from 'react-redux'
 import App from './App'
 import {store} from './store/store'
 import './index.css'
+import { PokemonApp } from './PokemonApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      {/*<App />*/}
+      <PokemonApp/>
     </Provider>   
   </React.StrictMode>
 )
